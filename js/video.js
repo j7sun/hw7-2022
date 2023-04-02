@@ -18,7 +18,7 @@ let playbtn = document.querySelector("#play").addEventListener("click", clickPla
 console.log("Play Video")
 function clickPlay(){
 	video.play();
-	document.querySelector("#volume").innerHTML = "100%";
+	document.querySelector("#volume").innerHTML = (video.volume * 100) + "%";
 }
 
 let pausebtn = document.querySelector("#pause").addEventListener("click", clickPause)
