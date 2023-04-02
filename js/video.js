@@ -68,8 +68,8 @@ function clickMute(){
 let volslide = document.querySelector("#slider").addEventListener("change",changeVol)
 console.log("Change Volume")
 function changeVol(){
-	video.volume = document.getElementById("slider").value / 100
-	document.getElementById("volume").innerHTML = video.volume * 100 + "%"
+	video.volume = this.value / 100
+	document.getElementById("volume").innerHTML = (video.volume * 100) + "%"
 }
 
 let oldbtn = document.querySelector("#vintage").addEventListener("click",clickOld)
