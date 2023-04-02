@@ -69,7 +69,7 @@ let volslide = document.querySelector("#slider").addEventListener("change",chang
 console.log("Change Volume")
 function changeVol(){
 	video.volume = this.value / 100
-	document.getElementById("volume").innerHTML = (video.volume * 100) + "%"
+	document.querySelector("#volume").innerHTML = (video.volume * 100) + "%"
 }
 
 let oldbtn = document.querySelector("#vintage").addEventListener("click",clickOld)
